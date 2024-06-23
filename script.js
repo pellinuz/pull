@@ -36,10 +36,14 @@ function pull(times) {
             star = 4;
             got4Star = true;
         }
-        results += `Pull ${totalPulls}: ${star}-star item<br>`;
+        results += `Pull ${times === 10 ? '10' : totalPulls}: ${star}-star item<br>`;
     }
 
-    resultsDiv.innerHTML = results;
+    const resultElement = document.createElement('div');
+    resultElement.className = 'result';
+    resultElement.innerHTML = results;
+    resultsDiv.prepend(resultElement);
+
     updateUI();
 }
 
