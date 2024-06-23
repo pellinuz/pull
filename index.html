@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gacha Game Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gacha Game Simulator</h1>
+        <div class="coins">Gacha Coins: <span id="coins">99999</span></div>
+        <div class="pulls">Total Pulls: <span id="totalPulls">0</span></div>
+        <div class="buttons">
+            <button id="pullOne" onclick="pull(1)">Pull 1 Time (160 Coins)</button>
+            <button id="pullTen" onclick="pull(10)">Pull 10 Times (1600 Coins)</button>
+        </div>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
